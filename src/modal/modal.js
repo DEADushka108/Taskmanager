@@ -2,9 +2,10 @@ import React from 'react';
 import './modal.css';
 
 export default class Modal extends React.Component {
-  state ={
+  state = {
     isOpen: false,
   }
+  
   render() {
     return (
       <React.Fragment>

@@ -14,10 +14,8 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
       .then(response => response.json())
       .then(todos => {
-        setTimeout(() => {
-          setTodos(todos);
-          setLoading(false);
-        }, 2000)
+        setTodos(todos);
+        setLoading(false);
       })
   }, [])
 
